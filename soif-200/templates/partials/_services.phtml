@@ -1,0 +1,13 @@
+<main class="service-main">
+    <section>
+        <h2>Nos Services</h2>
+        <?php foreach($data["services"] as $service){?>
+            <article>
+                <img src="<?=$service["image"]?>">
+                <h3><?=$service["name"]?></h3>
+                <p class="tagline"><?=$service["tagline"]?></p>
+                <p class="description"><?=$service["description"]?></p>
+            </article>
+        <?php }?>
+    </section>
+</main>
